@@ -38,12 +38,12 @@ class _HomePageState extends State<HomePage> {
             StoryListView(
               stories: stories,
             ),
-            Divider(),
+            const Divider(),
             Row(
               children: [
                 Container(
                   // color: Colors.orange,
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/avatar2.png',
                     width: 32,
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "joshua_l",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ],
                           ),
-                          Text(
+                          const Text(
                             "Tokyo, Japan",
                             style: TextStyle(
                               fontSize: 11,
@@ -87,10 +87,10 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.more_horiz),
+                  icon: const Icon(Icons.more_horiz),
                 ),
               ],
             ),
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
             Stack(
               children: [
                 ClipRRect(
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     child: Image.asset(
                       'assets/images/Rectangle.png',
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black.withOpacity(0.7),
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.all(8),
                       child: Align(
                         child: Text(
